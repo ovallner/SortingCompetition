@@ -7,9 +7,7 @@ class SortingCompetition
 public:
     SortingCompetition();
 
-signals:
 
-public slots:
 };
 
 #endif // SORTINGCOMPETITION_H
