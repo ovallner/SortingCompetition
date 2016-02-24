@@ -17,6 +17,7 @@ private:
     //get better timing data.
     //2) your data structure must be linear (no trees).
     std::vector<std::string> tokens;
+    std::vector<std::string> tokensCopy;
     std::ifstream inFile;
 
 public:

@@ -1,5 +1,8 @@
 #include "sortingcompetition.h"
 #include <vector>
+#include <iostream>
+#include <fstream>
+#include <string>
 
 using namespace std;
 
@@ -15,7 +18,14 @@ SortingCompetition::SortingCompetition(const string &inputFileName)
 
 void SortingCompetition::setFileName(const string &inputFileName)
 {
+    inFile.open(inputFileName);
 
+    // Check if input file opened correctly
+    if(!inFile)
+    {
+        cerr << "Input file \"" << inputFileName << "\" not opened correctly\n";
+        exit(EXIT_FAILURE);
+    }
 }
 
 bool SortingCompetition::readData()
@@ -30,5 +40,11 @@ bool SortingCompetition::readData()
         inFile >> word;
         tokens.push_back(word);
     }
+    return true;
+}
+
+bool SortingCompetition::prepareData()
+{
+    tokensCopy = tokens;
     return true;
 }
