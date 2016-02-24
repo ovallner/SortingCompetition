@@ -2,6 +2,7 @@
 #define SORTINGCOMPETITION_H
 
 #include <fstream>
+#include <vector>
 
 class SortingCompetition
 {
@@ -16,6 +17,9 @@ private:
     //2) your data structure must be linear (no trees).
 
     std::ifstream inFile;
+    std::vector<std::string> tokens;
+    std::vector<std::string> tokensCopy;
+
 
 public:
 

@@ -22,3 +22,9 @@ void SortingCompetition::setFileName(const string& inputFileName)
     }
 }
 
+bool SortingCompetition::prepareData()
+{
+    tokensCopy = tokens;
+    return true;
+}
+
