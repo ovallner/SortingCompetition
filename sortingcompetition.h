@@ -1,3 +1,6 @@
+#include <fstream>
+#include <vector>
+
 #ifndef SORTINGCOMPETITION_H
 #define SORTINGCOMPETITION_H
 
@@ -19,7 +22,6 @@ private:
     std::ifstream inFile;
     std::vector<std::string> tokens;
     std::vector<std::string> tokensCopy;
-
 
 public:
 
@@ -64,7 +66,6 @@ public:
     //validity of your sorting algorithm (in other words, did it sort
     //properly?).
     void outputData(const std::string& outputFileName);
-
 };
 
 #endif // SORTINGCOMPETITION_H
