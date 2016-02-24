@@ -4,6 +4,8 @@
 #ifndef SORTINGCOMPETITION_H
 #define SORTINGCOMPETITION_H
 
+#include <fstream>
+#include <vector>
 
 class SortingCompetition
 {
@@ -16,9 +18,10 @@ private:
     //allow for multiple executions of the sort method in order to
     //get better timing data.
     //2) your data structure must be linear (no trees).
+
+    std::ifstream inFile;
     std::vector<std::string> tokens;
     std::vector<std::string> tokensCopy;
-    std::ifstream inFile;
 
 public:
 

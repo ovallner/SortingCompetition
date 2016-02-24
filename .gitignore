@@ -71,5 +71,9 @@ Thumbs.db
 *.dll
 *.exe
 
+<<<<<<< HEAD
+# Test files
+=======
 # test files
+>>>>>>> 979d00a76a04175aab47efe032c34d235d8cc97c
 *.txt

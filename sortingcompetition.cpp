@@ -1,9 +1,8 @@
 #include "sortingcompetition.h"
-#include <vector>
-#include <iostream>
-#include <fstream>
 #include <string>
-
+#include <fstream>
+#include <iostream>
+#include <vector>
 using namespace std;
 
 SortingCompetition::SortingCompetition()
